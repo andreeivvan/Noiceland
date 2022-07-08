@@ -218,14 +218,14 @@ main {
 .static-contanier {
 }
 .posts-top {
-    
-    
+    border-bottom: 1px solid #E6E6E6;
+    padding: 58px 0px 65px 0px;
 }
 .post {
 }
 .post--big {
     display: flex;
-    padding: 58px 0px 35.5px 0px;
+    padding: 0px 0px 35.5px 0px;
 }
 
 .post--small {
@@ -298,6 +298,7 @@ main {
     font-size: 16px;
     line-height: 150%;
     color: #666666;
+    margin: 0px 0px 28px 0px;
 }
 .post__author {
     font-family: 'Libre Franklin';
@@ -311,9 +312,12 @@ main {
 }
 
 @media (max-width:1200px){
+    .posts-top {
+        padding: 30px 0px 30px 0px;
+    }
     .post--big {
         flex-direction: column;
-        padding: 58px 0px 35.5px 0px;
+        padding: 20px 0px 35.5px 0px;
     }
     .post__content--big {
         width: 100%;
@@ -325,11 +329,82 @@ main {
     }
 }
 @media (max-width:768px){
+    .posts-top {
+        padding: 10px 0px 30px 0px;
+    }
     .post--big {
-        padding: 30px 0px 25px 0px;
+        padding: 10px 0px 25px 0px;
     }
     .post--small {
         flex: 1 1 100%;
         padding: 25px 8px;
+    }
+}
+
+/* Top-latest--------------------------------------------------------------------------------------------- */
+
+.main__posts-latest {
+    background-color: white;
+}
+.posts-latest__cotanier {
+    border-bottom: 1px solid #E6E6E6;
+}
+.post__name--latest {
+    padding: 90px 0px 0px 0px;
+    margin: 0px;
+}
+.posts-latest {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -10px;
+    padding: 5px 0px 65px 0px;
+}
+.post--latest {
+    flex: 0 1 25%;
+    padding: 25px 10px;
+}
+.button {
+    background-color: white;
+}
+.button__post-latest {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 90px 0px;
+}
+
+.button {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.button--post-latest {
+    padding: 21px 26px;
+    border: 1px solid #000000;
+}
+
+@media (max-width:1200px){
+    .posts-latest {
+        padding: 5px 0px 40px 0px;
+    }
+    .post--latest {
+        flex: 0 1 50%;
+        padding: 25px 8px;
+    }
+    .post__name--latest {
+        padding: 50px 0px 0px 0px;
+    }
+}
+@media (max-width:768px){
+    .post--latest {
+        flex: 1 1 100%;
+    }
+    .button__post-latest {
+        margin: 0px 0px 30px 0px;
     }
 }
