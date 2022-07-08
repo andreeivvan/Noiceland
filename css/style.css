@@ -63,6 +63,29 @@ body  {
     box-sizing: content-box;
 }
 
+/* Button--------------------------------------------------------------------------------------------- */
+button:hover {
+    background-color:#e0e0e0;
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+
+}
+
+
+.button {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: white;
+    cursor: pointer;
+}
+
+
 /* Header--------------------------------------------------------------------------------------------- */
 
 .header {
@@ -108,8 +131,10 @@ body  {
     font-size: 14px;
     line-height: 171%;
     color: #000000;
+    
 }
-.nav-link--top-nav {
+.nav-link--top-nav:hover {
+    text-decoration: revert;
 }
 
 
@@ -249,6 +274,10 @@ main {
     position: relative;
 }
 
+img:hover {
+    opacity: .8;
+}
+
 .post__content {
     padding: 24px 0px 0px 0px;
 }
@@ -282,6 +311,9 @@ main {
     color: #000000;
     margin: 0px 0px 15px 0px;
 }
+.post__title:hover {
+    text-decoration: underline;
+}
 .post__title--big {
     font-family: 'Tenor Sans';
     font-style: normal;
@@ -291,6 +323,9 @@ main {
     text-transform: uppercase;
     color: #000000;
     margin: 0px 0px 27px 0px;
+}
+.post__title--big:hover {
+    text-decoration: underline;
 }
 .post__text {
     font-family: 'Source Serif Pro';
@@ -366,25 +401,15 @@ main {
     padding: 25px 10px;
     
 }
-.button {
-    background-color: white;
-}
+
+
 .button__post-latest {
     display: flex;
     justify-content: center;
     margin: 0px 0px 90px 0px;
 }
 
-.button {
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 120%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000000;
-}
+
 
 .button--post-latest {
     padding: 21px 26px;
