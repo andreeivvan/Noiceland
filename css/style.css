@@ -113,9 +113,10 @@ button:hover {
     margin-right: 20px;
 }
 .nav-list {
-    display: flex;
+    
 }
 .nav-list--top-nav {
+    display: flex;
 }
 .nav-item {
 }
@@ -481,4 +482,82 @@ img:hover {
     .post__name--featured {
         padding: 50px 0px 0px 0px;
     }
+}
+
+/* Footer--------------------------------------------------------------------------------------------- */
+
+.footer {
+    background: #141414;
+}
+.footer__top {
+    padding: 90px 0px 60px 0px;
+    border-bottom: 1px solid #4D4D4D;;
+}
+.brend {
+    display: flex;
+}
+.brend--footer a{
+    margin: 0px 15px 0px 0px;
+}
+.brend--footer .footer__label{
+    margin: 7px 0px 0px 0px;
+    
+}
+.footer__label {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+    height: 10px;
+    margin: 0px 0px 16px 0px;
+}
+.footer__bottom {
+    padding: 60px 0px 90px 0px;
+}
+.footer__row-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 40px 0px;
+}
+.footer__nav {
+    display: flex;
+}
+.footer__column {
+    width: 225px;
+}
+.nav-menu--footer {
+    flex-direction: column;
+}
+
+.nav-item--footer:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.nav-link--footer {
+    color: #FFFFFF;
+}
+.nav-link--footer:hover {
+    text-decoration: underline;
+}
+.footer__newsletter {
+}
+.footer__form {
+    display: flex;
+    justify-content: center;
+}
+.footer__input {
+    padding: 18px 24px;
+    background-color: white;
+}
+.button {
+}
+.button--newsletter {
+    color: #FFFFFF;
+    padding: 18px 24px;
+    background: #141414;
+}
+.footer__row-bottom {
 }
